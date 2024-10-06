@@ -30,5 +30,9 @@ while True:
         inhabitant.describe()
 
     command = input("> ")
-    current_room = current_room.move(command)
+    # Check whether a direction was typed
+    if command in ["north", "south", "east", "west"]:
+        current_room = current_room.move(command)
+    elif command == "talk":
+        # Add code here
 
