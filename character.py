@@ -8,8 +8,8 @@ class Character():
         print(f'{self.name} is in this room!')
         print(self.description)
 
-    def set_converstion(self, converstion):
-        self.conversation = converstion
+    def set_converstion(self, conversation):
+        self.conversation = conversation
 
     def talk(self):
         if self.conversation is not None:
